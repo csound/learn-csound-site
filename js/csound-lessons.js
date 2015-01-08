@@ -16,4 +16,20 @@ function loadLesson(lessonCsd, lessonText) {
       client.send();
 }
 
+function csCompile() {
+  alert("Compiling");
+}
 
+
+function csPerform() {
+
+}
+
+
+function csRender() {
+
+}
+
+function csReset() {
+
+}

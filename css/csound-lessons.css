@@ -1,9 +1,62 @@
-#editor { 
-  position: absolute;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  height: 100%;
+  font-family: sans-serif;
+  line-height: 24px;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+#header {
+  position: fixed;
+  left: 0;
+  right: 0;
   top: 0;
+  z-index: 1000;
+  font-size: 1.4em;
+  padding: 8px 24px;
+  line-height: 32px;
+  color: #222;
+  background: #E0EBF5;
+}
+
+#container {
+  position: fixed;
+  top: 48px;
   bottom: 0;
   left: 0;
-  width: 50%;
+  right: 0;
+}
+
+
+#editor-container {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  height: 100%;
+  width:50%;
+  z-index: 40;
+}
+
+#editor-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 100%;
+  background: #ccccff;
+}
+
+#editor { 
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 #lesson {
@@ -12,6 +65,7 @@
   bottom: 0;
   right: 0;
   width: 50%;
+  overflow: scroll;
 }
 
 #lessonText {
