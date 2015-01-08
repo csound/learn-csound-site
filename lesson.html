@@ -1,31 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ACE in Action</title>
-    <style type="text/css" media="screen">
-#editor { 
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-    </style>
+    <title>Lessons in Csound</title>
+    <link href="css/csound-lessons.css" rel="stylesheet">
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
 
-    <div id="editor">
-      instr 1
-        aout vco2 0.4, 440
-        outs aout, aout
-      endin
+    <div id="editor"></div>
+    <div id="lesson">
+      <div id="lessonText"></div>
     </div>
 
     <script src="js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/csound-lessons.js" type="text/javascript" charset="utf-8"></script>
+
     <script>
-      var editor = ace.edit("editor");
-      editor.setTheme("ace/theme/monokai");
-      editor.getSession().setMode("ace/mode/csound"); 
+      loadLesson("./lessons/pieces/trapped/trapped.csd", "./lessons/pieces/trapped/trapped.html");
     </script>
+
   </body>
 </html>

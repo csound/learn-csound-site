@@ -1,0 +1,19 @@
+#editor { 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+
+#lesson {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
+#lessonText {
+  padding: 20px;
+}
