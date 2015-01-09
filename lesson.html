@@ -3,7 +3,9 @@
   <head>
     <title>Lessons in Csound</title>
     <link href="css/csound-lessons.css" rel="stylesheet">
-    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="js/require.js" type="text/javascript" charset="utf-8" data-main="js/main.js"></script>
+
   </head>
   <body>
 
@@ -28,21 +30,6 @@
         <div id="lessonText"></div>
       </div>
     </div>
-
-
-    <script src="js/ace/ace.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libcsound.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/CsoundObj.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/csound-lessons.js" type="text/javascript" charset="utf-8"></script>
-
-    <script>
-      loadLesson("./lessons/pieces/trapped/trapped.csd", "./lessons/pieces/trapped/trapped.html");
-
-      $("#CompileButton").click(csCompile);
-      $("#PerformButton").click(csCompile);
-      $("#RenderButton").click(csCompile);
-      $("#ResetButton").click(csCompile);
-    </script>
 
   </body>
 </html>

@@ -68,7 +68,7 @@ define("ace/mode/csound_highlight_rules",["require","exports","module","ace/lib/
 });
 
 
-define("ace/mode/csound",["require","exports","module","ace/lib/oop","ace/mode/text","ace/mode/csound_highlight_rules","ace/mode/folding/cstyle"], function(require, exports, module) {
+define("ace/mode/csound",["require","exports","module","ace/lib/oop","ace/mode/text","ace/mode/csound_highlight_rules"], function(require, exports, module) {
   "use strict";
 
   var oop = require("../lib/oop");
