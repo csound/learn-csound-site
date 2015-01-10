@@ -32,21 +32,22 @@ require.config({
 	}
 });
 
-require(["jquery", "libcsound", "csound-lessons"], main);
+require(["jquery", "libcsound", "csound-lessons", "FileManager"], main);
 
 function main() {
 
   var CsoundLessons = require('csound-lessons');
 
+
 	Module['noExitRuntime'] = true;
 
 	Module['_main'] = function() {
 
-		const csound = new CsoundObj();
-
 		var allowedFileExtensions = ["csd", "wav", "orc"];
+    const fileManager = new FileManager(allowedFileExtensions, 
+        function(t) { console.debug(t); });
 
-    var lessons = new CsoundLessons();
+    var lessons = new CsoundLessons(fileManager);
     lessons.loadLesson("./lessons/pieces/trapped/trapped.csd", "./lessons/pieces/trapped/trapped.html");
 
 	};

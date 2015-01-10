@@ -71,3 +71,34 @@ html, body {
 #lessonText {
   padding: 20px;
 }
+
+/* MAIN PAGE */
+#content {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 32px auto;
+  padding: 48px;
+}
+
+.lesson {
+  background: #E0EBF5;
+  padding: 8px 16px;
+  margin: 16px 0;
+  position: relative;
+}
+
+.lesson-title {
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 16px 0 0 0;
+  padding-right: 48px;
+}
+
+.lesson a {
+  text-decoration: none;
+}
+
+#content a {
+  color: #375eab;
+}
