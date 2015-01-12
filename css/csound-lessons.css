@@ -24,6 +24,11 @@ html, body {
   background: #E0EBF5;
 }
 
+#header a {
+  text-decoration: none;
+  color: #000000;
+}
+
 #container {
   position: fixed;
   top: 48px;

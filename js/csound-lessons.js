@@ -11,9 +11,7 @@ define("csound-lessons", ["ace/ace", "FileManager"], function(ace, fileManager) 
     const csoundObj = new CsoundObj();
     const currentFilePath = "/temp.csd";
 
-    this.loadLesson = function(lessonCsd, lessonText) {
-      $("#lessonText").load(lessonText);
-
+    this.loadCSD = function(lessonCsd) {
       var client = new XMLHttpRequest();
       client.open('GET', lessonCsd, true);
       client.onreadystatechange = function() {

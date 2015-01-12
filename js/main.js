@@ -38,7 +38,6 @@ function main() {
 
   var CsoundLessons = require('csound-lessons');
 
-
 	Module['noExitRuntime'] = true;
 
 	Module['_main'] = function() {
@@ -48,7 +47,7 @@ function main() {
         function(t) { console.debug(t); });
 
     var lessons = new CsoundLessons(fileManager);
-    lessons.loadLesson("./lessons/pieces/trapped/trapped.csd", "./lessons/pieces/trapped/trapped.html");
+    lessons.loadCSD(CSD_PATH);
 
 	};
 };

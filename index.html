@@ -1,40 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Learn Csound</title>
+---
+layout: main 
+title: Learn Csound
+---
+<h1>Lessons in Csound</h1>
 
-  <link href="css/csound-lessons.css" rel="stylesheet">
-</head>
+<p>This is a community-developed site for learning Csound. It uses a web version of Csound which runs in the browser (no plugins necessary).</p>
 
-<body>
-  <div id="header">
-    Lessons in Csound
-  </div>
+<h2>Lessons</h2>
 
-  <div id="content">
-    <h1>Lessons in Csound</h1>
+{% for lesson in site.lessons %}
+<div class="lesson">
+  <a href="{{lesson.url}}" class="lesson-title">{{lesson.title}}</a>
+  <p>{{lesson.excerpt}}</p>
+</div>
+{% endfor %}
 
-    <p>This is a community-developed site for learning Csound. It uses a web version of Csound which runs in the browser (no plugins necessary).</p>
+<h2>Pieces</h2>
 
-    <h2>Introduction</h2>
+{% for piece in site.pieces %}
+<div class="lesson">
+  <a href="{{piece.url}}" class="lesson-title">{{piece.title}}</a>
+  <p>{{piece.excerpt}}</p>
+</div>
+{% endfor %}
 
-    <div class="lesson">
-      <a href="introduction.html" class="lesson-title">Introduction</a>
-      <p>Learn how to use this site.</p>
-    </div>
-    
+<h2>Credits</h2>
 
-    <h2>Lessons</h2>
-
-    <div class="lesson">
-      <a href="lesson.html" class="lesson-title">Lesson 1</a>
-      <p>Dr. Richard Boulanger's "Trapped in Convert".</p>
-    </div>
-
-    <h2>Credits</h2>
-
-    <p>This site's style and design is heavily modeled on <a href="https://tour.golang.org/list">A Tour of Go</a>. 
-
-  </div>
-
-</html>
+<p>This site's style and design is heavily modeled on <a href="https://tour.golang.org/list">A Tour of Go</a>. 
+</p>
