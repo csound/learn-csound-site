@@ -10,7 +10,7 @@ title: Learn Csound
 
 {% for lesson in site.lessons %}
 <div class="lesson">
-  <a href="/{{lesson.url}}" class="lesson-title">{{lesson.title}}</a>
+  <a href="{{BASE_PATH}}{{lesson.url}}" class="lesson-title">{{lesson.title}}</a>
   <p>{{lesson.excerpt}}</p>
 </div>
 {% endfor %}
@@ -19,7 +19,7 @@ title: Learn Csound
 
 {% for piece in site.pieces %}
 <div class="lesson">
-  <a href="/{{piece.url}}" class="lesson-title">{{piece.title}}</a>
+  <a href="{{BASE_PATH}}{{piece.url}}" class="lesson-title">{{piece.title}}</a>
   <p>{{piece.excerpt}}</p>
 </div>
 {% endfor %}
