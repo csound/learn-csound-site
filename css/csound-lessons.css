@@ -59,7 +59,8 @@ html, body {
 #editor { 
   position: absolute;
   top: 48px;
-  bottom: 0;
+  /*bottom: 0;*/
+  height: calc(100% - 96px);
   left: 0;
   width: 100%;
 }
