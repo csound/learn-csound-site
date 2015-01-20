@@ -26,17 +26,19 @@ define("csound-lessons", ["ace/ace", "FileManager"], function(ace, fileManager) 
       fileManager.writeStringToFile(currentFilePath,
           editorText);
       csoundObj.compileCSD(currentFilePath);
-    }
-
-    this.csPerform = function() {
       csoundObj.start();
     }
 
-    this.csRender = function () {
-      csoundObj.render(this.currentFilePath);
-    }
+    //this.csPerform = function() {
+    //  csoundObj.start();
+    //}
+
+    //this.csRender = function () {
+    //  csoundObj.render(this.currentFilePath);
+    //}
 
     this.csReset = function() {
+      csoundObj.stop();
       csoundObj.reset();
     }
 
