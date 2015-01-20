@@ -7,8 +7,8 @@ title: Learn Csound
 <p>This is a community-developed site for learning Csound. It uses a web version of Csound which runs in the browser (no plugins necessary).</p>
 
 <h2>Lessons</h2>
-
-{% for lesson in site.lessons %}
+{% assign lessons = site.lessons | sort: "order" %}
+{% for lesson in lessons %}
 <div class="lesson">
   <a href="{{site.baseurl}}{{lesson.url}}" class="lesson-title">{{lesson.title}}</a>
   <p>{{lesson.excerpt}}</p>
