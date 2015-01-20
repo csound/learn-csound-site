@@ -4,6 +4,7 @@ title:  "Introduction"
 date:   2014-03-27 17:00:00
 categories: lesson 
 csd: introduction.csd
+order: 1
 ---
 
 # Welcome to Lessons in Csound!
